@@ -26,10 +26,10 @@ public class Main {
         System.out.println("Задача 2");
         var clientOS1 = 1;
         var clientDeviceYear = 2014;
-        printLink(clientOS1,clientDeviceYear);
+        printOperatingSystemLink(clientOS1,clientDeviceYear);
     }
 
-    private static void printLink(int clientOS1, int clientDeviceYear) {
+    private static void printOperatingSystemLink(int clientOS1, int clientDeviceYear) {
         if (clientDeviceYear >= 2015 && clientOS1 == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке");
         } else if (clientDeviceYear >= 2015 && clientOS1 == 1) {
@@ -45,10 +45,10 @@ public class Main {
     public static void task3 () {
         System.out.println("Задача 3");
         int deliveryDistance = 101;
-        printDay(deliveryDistance);
+        printDeliveryDay(deliveryDistance);
     }
 
-    public static void printDay(int deliveryDistance) {
+    public static void printDeliveryDay(int deliveryDistance) {
         if (deliveryDistance > 0 && deliveryDistance <= 20) {
             System.out.println("Для поставки потребуется 1 день");
         } else if (deliveryDistance > 20 && deliveryDistance <= 60) {
